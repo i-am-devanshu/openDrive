@@ -1,0 +1,80 @@
+<div class="h-screen bg-gray-50">
+  <nav class="flex py-3 justify-between px-8 bg-white">
+    <div class="flex gap-4 items-center">
+      <img src="logo.svg" class="w-12 h-12">
+      <h1 class="text-3xl">Open Drive</h1>
+    </div>
+    <div class="flex gap-6">
+      <div class="relative">
+        <input type="text" placeholder="Search File"
+          class="w-sm pl-12 py-3 rounded-full border border-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500">
+        <img src="search.svg" class="w-8 h-8 absolute left-3 top-2.5">
+
+      </div>
+
+      <button
+        class="flex items-center gap-2 px-6 py-2 bg-blue-500 text-white rounded-full cursor-pointer transition-all">
+        Upload File
+        <img src="upload.svg" class="w-6 h-6">
+      </button>
+    </div>
+  </nav>
+
+  <div class="grid grid-cols-4 gap-5 p-8">
+
+    <div class="rounded-lg flex flex-col p-8 bg-orange-100 shadow">
+      <img src="file.svg" class="w-10 h-10">
+      <p class="text-xl mt-3 ">Total Documents</p>
+      <p class="mt-2 font-semibold text-2xl">23</p>
+      <p class="text-sm text-gray-500">Size: 1.2GB</p>
+    </div>
+    <div class="rounded-lg flex flex-col p-8 bg-purple-100 shadow">
+      <img src="media.svg" class="w-10 h-10">
+      <p class="text-xl mt-3 ">Total Media</p>
+      <p class="mt-2 font-semibold text-2xl">45</p>
+      <p class="text-sm text-gray-500">Size: 2.0GB</p>
+    </div>
+    <div class="rounded-lg flex flex-col p-8 bg-blue-100 shadow">
+      <img src="misc.svg" class="w-10 h-10">
+      <p class="text-xl mt-3 ">Misc</p>
+      <p class="mt-2 font-semibold text-2xl">12</p>
+      <p class="text-sm text-gray-500">Size: 1.0GB</p>
+    </div>
+    <div class="rounded-lg flex flex-col p-8 bg-green-100 shadow">
+      <img src="total.svg" class="w-10 h-10">
+      <p class="text-xl mt-3">Total Storage</p>
+      <p class="mt-2 font-semibold text-2xl">80</p>
+      <p class="text-sm text-gray-500">Size: 4.2GB</p>
+    </div>
+
+  </div>
+  <div class="flex flex-col w-full px-8">
+    <div class="flex items-center justify-between w-full mb-4">
+      <p class="text-lg font-semibold">Recent Files</p>
+      <button class="text-lg text-blue-500 hover:text-blue-600 hover:underline">
+        View All
+      </button>
+    </div>
+    <div class="rounded-lg flex items-center space-x-5 p-5 bg-white shadow">
+      <img src="file.svg" class="w-8 h-8">
+      <div class="flex flex-col w-full">
+        <p class="text-lg">Linux.exe</p>
+        <p class="text-sm text-gray-500">Modified Today</p>
+      </div>
+      <button class="ml-auto  cursor-pointer relative">
+        <img src="more.svg" class="w-8 h-8">
+        <div class="absolute hidden right-0 mt-2 w-48 bg-white border border-gray-200 rounded-lg shadow-lg p-2 z-10">
+          <a class="flex items-center p-2 hover:bg-gray-100 rounded-lg transition-colors">
+            <img src="delete.svg" class="w-6 h-6 mr-2">
+            Delete
+          </a>
+          <a class="flex items-center p-2 hover:bg-gray-100 rounded-lg transition-colors">
+            <img src="eye.svg" class="w-6 h-6 mr-2">
+            View
+          </a>
+        </div>
+      </button>
+    </div>
+  </div>
+
+</div>

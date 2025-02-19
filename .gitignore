@@ -1,0 +1,3 @@
+server/src/main/resources/application.properties
+server/target/
+client/README.md
